@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/09a85ebd29.js" crossorigin="anonymous"></script>
+    <title>Validation form</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <i class="fa-solid fa-file"></i>
+            <div class="input-box">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your Name" id="user-name" onkeyup="validateName()">
+                <span id="name-error"> </span>
+            </div>
+            <div class="input-box">
+                <label>Mobile Number</label>
+                <input type="text" placeholder="Enter your Mobile number" id="user-number" onkeyup="validateNumber()">
+                <span id="mobile-error"> </span>
+            </div>
+            <div class="input-box">
+                <label>Email ID</label>
+                <input type="text" placeholder="Enter your Email ID" id="user-email" onkeyup="validateEmail()">
+                <span id="email-error"> </span>
+            </div>
+            <div class="input-box">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter your Message" id="user-msg" onkeyup="validateMsg()"></textarea>
+                <span id="message-error"> </span>
+            </div>
+            <button onclick="return validateForm()">Submit</button>
+            <span id="submit-error"> </span>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
